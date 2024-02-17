@@ -1,0 +1,61 @@
+<section>
+
+    <div class="rows recipe-list">
+      <div class="column">
+            <h4 class="tilte">Recipe List </h4>
+            <p class="desciption">A list of all the users in your account including their name, title, email and role.</p>
+      </div>  
+      <div class="column">
+        <a routerLink="/recipe-from" class="inline-block rounded-md border border-transparent bg-indigo-600 px-3 py-2 text-center font-medium text-white hover:bg-indigo-700">Add Recipe</a>
+    </div>
+ 
+    </div> 
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+              <th scope="col" class="px-6 py-3">
+                 Recipe Name
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Category
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Images
+              </th>
+              <th scope="col" class="px-6 py-3">
+                 Tags
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Action
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let item of recipeData" class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                 {{item.title}}
+              </th>
+              <td class="px-6 py-4">
+                  {{item.category}}
+              </td>
+              <td class="px-6 py-4">
+                <img [src]="item.Images" alt="" srcset="">
+                 
+              </td>
+              <td class="px-6 py-4">
+             
+                  {{item.Tags}}
+              </td>
+              <td class="px-6 py-4">
+                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+              </td>
+          </tr>
+         
+      </tbody>
+  </table>
+</div>
+
+   
+</section>

@@ -1,0 +1,118 @@
+
+
+<section>
+  <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+    <form class="space-y-6" [formGroup]="recipeFrom">
+      <div>
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Title *</label>
+        <div class="mt-2">
+          <input type="text" required class="input-size block w-full inputs rounded-md border-0 py-1.5" formControlName="title"
+            placeholder=" Enter title *">
+        </div>
+      </div>
+
+
+      <div>
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">ingredients *</label>
+        <div class="mt-2">
+          <input type="text" required class="input-size block w-full inputs rounded-md border-0 py-1.5" formControlName="ingredients"
+            placeholder=" Enter ingredients *">
+        </div>
+      </div>
+
+
+      <div>
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Steps *</label>
+        <div class="mt-2">
+          <input type="text" required class="input-size block w-full inputs rounded-md border-0 py-1.5" formControlName="Steps"
+            placeholder=" Enter Steps *">
+        </div>
+      </div>
+
+
+      <div>
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Tags *</label>
+        <div class="mt-2">
+          <input type="text" required class="input-size block w-full inputs rounded-md border-0 py-1.5" formControlName="Tags"
+            placeholder=" Enter Tags *">
+        </div>
+      </div>
+
+
+
+      <!-- <div formArrayName="ingredients">
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Ingredients *</label>
+        <div class="mt-2 add" *ngFor="let ingredient of ingredientsArray?.controls; let i=index">
+          <input type="text" required class="block w-full inputs rounded-md border-0 py-1.5"
+          formControlName="ingredientName" placeholder=" Enter ingredient {{i+1}} *"> <span (click)="removeIngredients(i)"><i class="fa-sharp fa-solid fa-trash icons"></i></span>
+        </div>
+        <div class="mt-2 add">
+                  <input type="text" required class="block w-full inputs rounded-md border-0 py-1.5"
+          formControlName="ingredientName" placeholder=" Enter ingredient 1 *" readonly>  
+          <span (click)="addingredients()"><i class="fa-sharp fa-solid fa-plus icons"></i></span>
+        </div>
+       
+      
+      </div> -->
+
+    
+
+      <!-- <div formArrayName="Steps">
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Steps *</label>
+      
+        <div class="mt-2 add" *ngFor="let step of StepsArray?.controls; let i=index">
+          <input type="text" required class="block w-full inputs rounded-md border-0 py-1.5"
+            formControlName="stepName" placeholder=" Enter step {{i+1}} *"> <span (click)="removeSteps(i)"><i class="fa-sharp fa-solid fa-trash icons"></i></span>
+        </div>
+      
+        <div class="mt-2 add">
+       
+          <input type="text" required class="block w-full inputs rounded-md border-0 py-1.5"
+          formControlName="stepName" placeholder=" Enter step  *" readonly>  <span (click)="addSteps()"><i class="fa-sharp fa-solid fa-plus icons"></i></span>
+        </div>
+      </div> -->
+
+      <div>
+        <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Category *</label>
+        <div class="mt-2">
+          <input type="text" required class="input-size block w-full inputs rounded-md border-0 py-1.5" formControlName="category"
+            placeholder=" Enter Category *">
+        </div>
+      </div>
+
+
+     
+
+      <!-- <div formArrayName="Tags">
+        <label class="block text-sm font-medium leading-6 text-gray-900">Tags *</label>
+        
+     
+        <div class="mt-2 add" *ngFor="let tag of TagsArray.controls; let i=index">
+          <input type="text" required class="block w-full inputs rounded-md border-0 py-1.5" formControlName="tagName" placeholder="Enter Tag {{i+1}} *">
+          <span (click)="removeTags(i)"><i class="fa-sharp fa-solid fa-trash icons"></i></span>
+        </div>
+        <div class="mt-2 add">
+          <input type="text" required class="block w-full inputs rounded-md border-0 py-1.5" formControlName="tagName" placeholder="Enter Tag  *" readonly> 
+          <span (click)="addTags()"><i class="fa-sharp fa-solid fa-plus icons"></i></span>
+        </div>
+      </div> -->
+
+      
+      <div>
+        <label  class="block text-sm font-medium leading-6 text-gray-900">Images *</label>
+        <div class="mt-2">
+          <input type="text" required class="input-size block w-full inputs rounded-md border-0 py-1.5" formControlName="Images"
+            placeholder=" Enter Images *">
+        </div>
+      </div>
+
+     
+  
+      <div>
+        <button (click)="onsubmitRecipe()"
+          class="input-size flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Submit</button>
+      </div>
+    </form>
+
+  </div>
+</section>

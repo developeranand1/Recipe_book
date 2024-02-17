@@ -1,0 +1,16 @@
+.rows {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rows .column{
+    padding: 15px;
+}
+
+.recipe-list{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4F46E5 ;
+}
